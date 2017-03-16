@@ -61,21 +61,6 @@ public class RookMovesInCircleBoardTest {
 
 		RookMovesInCircleBoard pm = new RookMovesInCircleBoard();
 		ArrayList<Square> obtained = pm.getMoves(board, rook, true);
-
-		/*
-		for (int i = 0; i < expected.size(); i++){
-			Square esperado = expected.get(i);
-			int sum = 0;
-			for (int j = 0; j < obtained.size(); j++){
-				if (expected.get(i)==obtained.get(j)){
-					sum ++;
-				}
-			}
-			if (sum == 0){
-				System.out.println("No está: " + esperado.getPozX() + ", " + esperado.getPozY());
-			}
-			
-		}*/
 		assertTrue(obtained.containsAll(expected));
 
 	}
